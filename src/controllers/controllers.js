@@ -1,4 +1,4 @@
-const model = require('../models/model')
+const model = require('../models/models')
 
 const getAll = (req, res, next) => {
   const data = model.getAll()
