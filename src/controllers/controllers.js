@@ -40,4 +40,4 @@ const deleteSnack = (req, res, next) =>{
   res.status(204).json({data: result})
 }
 
-module.exports = {getAll, getOne, createSnack, updateSnack, deleteDog}
+module.exports = {getAll, getOne, createSnack, updateSnack, deleteSnack}
