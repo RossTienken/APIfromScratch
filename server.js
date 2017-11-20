@@ -6,7 +6,7 @@ const uuid = require('uuid/v4')
 const morgan = require('morgan')
 
 app.disable('x-powered-by')
-app.use(morgan('dev'))
+if (process.env.NODE_ENV === 'development') app.use(morgan('dev'))
 app.use(bodyParser.json())
 
 
