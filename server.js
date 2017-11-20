@@ -3,8 +3,10 @@ const app = express()
 const port = process.env.PORT || 3000
 const bodyParser = require('body-parser')
 const uuid = require('uuid/v4')
+const morgan = require('morgan')
 
 app.disable('x-powered-by')
+app.use(morgan('dev'))
 app.use(bodyParser.json())
 
 
